@@ -5,7 +5,7 @@ def print_container(container):
     for i in range(len(container)):
         if container[i] == "":
             with open("out.txt", "a", encoding='utf-8') as fout:
-                fout.write(f'\nКонтейнер содержит {i} элементов:')
+                fout.write(f'\n\nКонтейнер содержит {i} элементов:')
                 razmernost = i
             break
 
@@ -15,7 +15,7 @@ def print_container(container):
                 output_shape.out_shape(container,j)
 
         elif razmernost == 0:
-            fout.write(f'\nКонтейнер содержит {razmernost} элементов:')
+            fout.write(f'\n\nКонтейнер содержит {razmernost} элементов:')
             fout.write(f'\nКонтейнер очень пуст')
 
 
